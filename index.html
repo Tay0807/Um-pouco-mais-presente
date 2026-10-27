@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dez ideias simples para redescobrir o tempo fora das redes sociais e cultivar uma atenção mais consciente.">
+  <title>Um pouco mais presente | 10 ideias longe do celular</title>
+  <style>
+    :root {
+      --ink: #24352e;
+      --muted: #68756d;
+      --paper: #f7f5ef;
+      --card: #fffefa;
+      --green: #426b56;
+      --green-dark: #294a39;
+      --sage: #dce6d9;
+      --peach: #f0d7c4;
+      --line: #e4e5dc;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--paper); color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 40px)); margin: 0 auto; }
+    header { padding: 22px 0; }
+    .nav { display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-size:.9rem; font-weight:750; letter-spacing:.04em; }
+    .brand span { color: var(--green); }
+    .nav a { font-size:.9rem; text-decoration:none; color:var(--muted); }
+    .hero { padding: 74px 0 62px; display:grid; grid-template-columns: 1.15fr .85fr; gap:52px; align-items:center; }
+    .eyebrow { color:var(--green); text-transform:uppercase; letter-spacing:.15em; font-size:.72rem; font-weight:800; }
+    h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.8rem, 6vw, 5.2rem); line-height:.99; letter-spacing:-.045em; font-weight:500; margin:18px 0 24px; }
+    h1 em { color:var(--green); font-weight:500; }
+    .hero p { max-width:590px; font-size:1.08rem; color:var(--muted); }
+    .cta { display:inline-flex; align-items:center; gap:10px; background:var(--green-dark); color:white; text-decoration:none; padding:13px 19px; border-radius:999px; margin-top:17px; font-size:.93rem; font-weight:700; }
+    .cta:hover { background:var(--green); }
+    .hero-art { min-height:350px; border-radius:48% 48% 22px 22px; background:var(--sage); position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+    .sun { width:160px; height:160px; border-radius:50%; background:#e7b98f; position:absolute; top:35px; right:38px; }
+    .hill { position:absolute; width:130%; height:55%; border-radius:50% 50% 0 0; bottom:-13%; left:-15%; background:#9bb69b; transform:rotate(-8deg); }
+    .hill2 { position:absolute; width:120%; height:40%; border-radius:50% 50% 0 0; bottom:-15%; right:-30%; background:#63866e; transform:rotate(13deg); }
+    .art-note { z-index:1; background:rgba(255,254,250,.92); padding:19px 22px; border-radius:16px; max-width:230px; box-shadow:0 10px 35px #294a3915; transform:translateY(25px) rotate(-3deg); }
+    .art-note strong { display:block; font-family:Georgia,serif; font-size:1.35rem; line-height:1.2; }
+    .art-note small { color:var(--muted); display:block; margin-top:8px; }
+    .intro { padding:44px 0 52px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    .intro-grid { display:grid; grid-template-columns:.65fr 1.35fr; gap:48px; }
+    h2 { font-family:Georgia,serif; font-weight:500; font-size:clamp(2rem,4vw,3.2rem); letter-spacing:-.035em; line-height:1.1; margin:10px 0 18px; }
+    .intro p { color:var(--muted); margin:0 0 12px; }
+    .stat { display:flex; align-items:baseline; gap:10px; margin-top:22px; }
+    .stat strong { font-family:Georgia,serif; font-size:2.5rem; color:var(--green); font-weight:500; }
+    .stat span { color:var(--muted); font-size:.9rem; }
+    .ideas { padding:70px 0 84px; }
+    .section-head { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:30px; }
+    .section-head p { color:var(--muted); max-width:390px; margin:0 0 5px; }
+    .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:15px; }
+    .idea { display:flex; gap:18px; padding:24px; border:1px solid var(--line); background:var(--card); border-radius:18px; transition:transform .2s, box-shadow .2s; }
+    .idea:hover { transform:translateY(-3px); box-shadow:0 12px 28px #24352e0a; }
+    .number { flex:0 0 42px; width:42px; height:42px; border-radius:14px; background:var(--sage); display:grid; place-items:center; color:var(--green-dark); font-weight:800; font-size:.9rem; }
+    .idea:nth-child(3n+2) .number { background:var(--peach); }
+    .idea h3 { margin:1px 0 7px; font-size:1.1rem; }
+    .idea p { margin:0; color:var(--muted); font-size:.94rem; }
+    .tag { display:inline-block; margin-top:13px; color:var(--green); font-size:.72rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+    .reflection { background:var(--green-dark); color:#fffefa; padding:60px 0; }
+    .reflection-inner { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; }
+    .reflection h2 { margin-top:0; }
+    .reflection p { color:#d5e0d5; }
+    .question { border-left:2px solid #d9b18b; padding:6px 0 6px 25px; font-family:Georgia,serif; font-size:1.6rem; line-height:1.35; }
+    .mini-note { color:#c3d1c4; font-size:.82rem; margin-top:16px; }
+    footer { padding:25px 0 35px; color:var(--muted); font-size:.82rem; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    @media (max-width:720px) {
+      .hero { grid-template-columns:1fr; padding-top:42px; gap:30px; }
+      .hero-art { min-height:270px; }
+      .intro-grid, .reflection-inner { grid-template-columns:1fr; gap:18px; }
+      .section-head { display:block; }
+      .section-head p { margin-top:14px; }
+      .grid { grid-template-columns:1fr; }
+      .wrap { width:min(100% - 30px, 600px); }
+      .sun { width:125px; height:125px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">UM POUCO <span>MAIS PRESENTE</span></div>
+      <a href="#ideias">Explorar as ideias ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">Uma pausa para olhar ao redor</div>
+        <h1>Seu tempo também merece <em>espaço.</em></h1>
+        <p>Nem todo momento livre precisa ser preenchido por uma tela. Às vezes, basta experimentar algo diferente para perceber o que cabe na vida quando a rolagem dá lugar à presença.</p>
+        <a class="cta" href="#ideias">Encontrar uma ideia <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração abstrata de sol e colinas, evocando uma pausa ao ar livre">
+        <div class="sun"></div><div class="hill"></div><div class="hill2"></div>
+        <div class="art-note"><strong>Menos rolagem.<br>Mais vida acontecendo.</strong><small>Comece com alguns minutos.</small></div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="wrap intro-grid">
+        <div>
+          <div class="eyebrow">Por trás da ideia</div>
+          <h2>Para onde vai a nossa atenção?</h2>
+        </div>
+        <div>
+          <p>Esta página nasce de uma reflexão sobre como o uso excessivo das redes sociais pode se relacionar com a atenção e os hábitos dos jovens. Em uma experiência pessoal de um mês longe dessas plataformas, mantendo o WhatsApp para comunicações essenciais, o tempo médio diário de uso caiu de cerca de 4h30 para 20 minutos.</p>
+          <p>Durante esse período, o tempo foi redirecionado para leitura, estudos, atividades artísticas e exercícios. Também foram percebidas mudanças na concentração, no sono, na disposição e na percepção do tempo. Contudo, essas observações são pessoais e não provam, por si só, uma relação de causa e efeito.</p>
+          <p>A proposta não é tratar a tecnologia como vilã, mas abrir espaço para uma relação mais consciente com ela e lembrar que existem muitas maneiras de ocupar o tempo fora das redes.</p>
+          <div class="stat"><strong>10</strong><span>ideias simples para experimentar no seu ritmo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ideas" id="ideias">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Uma pequena amostra de possibilidades</div>
+            <h2>10 coisas para fazer<br>longe do celular</h2>
+          </div>
+          <p>Não precisa mudar a rotina inteira. Escolha uma ideia, adapte ao seu dia e veja como se sente.</p>
+        </div>
+        <div class="grid">
+          <article class="idea"><div class="number">01</div><div><h3>Ler algumas páginas</h3><p>Comece por um conto, uma crônica ou um livro que desperte curiosidade. Dez minutos já contam.</p><span class="tag">Intelectual</span></div></article>
+          <article class="idea"><div class="number">02</div><div><h3>Desenhar sem buscar perfeição</h3><p>Faça um desenho do que está à sua frente ou invente formas no papel.</p><span class="tag">Criatividade</span></div></article>
+          <article class="idea"><div class="number">03</div><div><h3>Caminhar prestando atenção</h3><p>Dê uma volta em um local seguro e observe sons, cores, árvores e detalhes que normalmente passam despercebidos.</p><span class="tag">Movimento</span></div></article>
+          <article class="idea"><div class="number">04</div><div><h3>Aprender algo com as mãos</h3><p>Experimente crochê, bordado, cerâmica, origami ou algum pequeno reparo.</p><span class="tag">Habilidade</span></div></article>
+          <article class="idea"><div class="number">05</div><div><h3>Escrever em um diário</h3><p>Registre como foi o dia, o que chamou sua atenção ou uma ideia que gostaria de desenvolver melhor.</p><span class="tag">Autoconhecimento</span></div></article>
+          <article class="idea"><div class="number">06</div><div><h3>Fazer uma atividade física</h3><p>Alongue-se, dance, corra ou pratique um esporte de que goste. Escolha algo adequado ao seu corpo e à sua rotina.</p><span class="tag">Corpo</span></div></article>
+          <article class="idea"><div class="number">07</div><div><h3>Conversar pessoalmente</h3><p>Chame alguém para tomar um café, jogar conversa fora ou fazer uma ligação sem dividir a atenção com outras telas.</p><span class="tag">Conexão</span></div></article>
+          <article class="idea"><div class="number">08</div><div><h3>Explorar música de outro jeito</h3><p>Ouça um álbum inteiro, pratique um instrumento ou tente aprender uma canção, sem ficar pulando de faixa em faixa.</p><span class="tag">Arte</span></div></article>
+          <article class="idea"><div class="number">09</div><div><h3>Cozinhar algo simples</h3><p>Prepare uma receita fácil, um lanche ou uma bebida. </p><span class="tag">Vida cotidiana</span></div></article>
+          <article class="idea"><div class="number">10</div><div><h3>Ficar alguns minutos sem estímulos</h3><p>Sente-se perto da janela, observe o ambiente ou simplesmente descanse.</p><span class="tag">Presença</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="reflection">
+      <div class="wrap reflection-inner">
+        <div>
+          <div class="eyebrow" style="color:#d9b18b">Uma pergunta para levar</div>
+          <h2>Qual é a sua próxima escolha?</h2>
+          <p>Você não precisa abandonar a tecnologia. Pode começar escolhendo, de propósito, o que fazer com um pequeno pedaço do seu tempo.</p>
+        </div>
+        <div>
+          <div class="question">Se eu deixasse o celular de lado por 20 minutos, o que teria vontade de fazer?</div>
+          <div class="mini-note">Escolha uma das ideias e experimente hoje, sem cobrança e sem precisar mostrar a ninguém.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>Um pouco mais presente · Atenção, hábitos e vida digital</span>
+      <span>Conteúdo inspirado em uma pesquisa sobre uso de redes sociais e atenção de jovens.</span>
+    </div>
+  </footer>
+</body>
+</html>
